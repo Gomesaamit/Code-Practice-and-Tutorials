@@ -1,5 +1,5 @@
 public with sharing class mrhqMissionFive {
-    public static void mrhqMissionFive() {
+    public static void mrhqProjectMissionFive() {
 
         List<Integer> input  =  new List<Integer>();                    // initialize list " input" to store 4 numbers
 
@@ -19,15 +19,15 @@ public with sharing class mrhqMissionFive {
                 String display      =       'DingDong';
                 System.debug(display);
             }
-            if (Math.max(num, 5) ==  0) {                               // logic for display " Dong"   
+            if (Math.mod(num,5) ==  0) {                               // logic for display " Dong"   
                 String display      =    'Dong';
                 System.debug(display);
             }
-            if (Math.mod(num , 3) == 0) {                               // logic for display " Ding"
+            if (Math.mod(num ,3) == 0) {                               // logic for display " Ding"
                 String display      =   'Ding';
                 System.debug(display);                
             }
-            if (Math.mod(num, 3)  != 0  &&  Math.mod(num, 5)  != 0) {   // logic for display " 17" if the remainder is not == '0'
+            if (Math.mod(num,3)  != 0  &&  Math.mod(num, 5)  != 0) {   // logic for display " 17" if the remainder is not == '0'
                 String display      =   '17';
                 System.debug(display);
                 
