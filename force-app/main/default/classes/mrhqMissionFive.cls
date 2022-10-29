@@ -27,7 +27,7 @@ public with sharing class mrhqMissionFive {
                 String display      =   'Ding';
                 System.debug(display);                
             }
-            if (Math.mod(num, 3)  != 0  &&  Math.mod(num, 5)  != 0) {   // logic for display " 17"
+            if (Math.mod(num, 3)  != 0  &&  Math.mod(num, 5)  != 0) {   // logic for display " 17" if the remainder is not == '0'
                 String display      =   '17';
                 System.debug(display);
                 
