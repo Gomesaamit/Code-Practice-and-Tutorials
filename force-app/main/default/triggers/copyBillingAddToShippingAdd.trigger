@@ -21,6 +21,11 @@ trigger copyBillingAddToShippingAdd on Account (before insert) {                
 
         }
         // NEVER WRITE INSERT/UPDATE STATEMENTS IN BEFORE INSERT EVENTS 
+        //CONTEXT VARIABLE 1: Trigger.new - > List iof records that are getting inserted 
+        //CONTEXT VARIABLE 2: Trigger.new -> Returns True if Trigger is running on Before event
+        //CONTEXT VARIABLE 3: Trigger.new -> Returns True if trigger  is called when a user has done an insert Operation.
+
+
         
     }                                                                                
 
