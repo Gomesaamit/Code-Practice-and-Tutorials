@@ -4,6 +4,11 @@ trigger copyBillingAddToShippingAdd on Account (before insert) {                
 
         for(Account accRec : Trigger.new){                                           // For Loop to run through records tat got inserted
 
+            /* Scenario 2* - Throw error if Annual Revenuw is less than 1000 */
+            if(accRec.AnnualRevenue < 1000)
+            accRec.addError('Annual Revenue cannot be less than 1000');
+
+            /* Scenario 1 */ 
             if(accRec.ShippingCity   ==  null)                                       // condition to check 
             accRec.ShippingCity        =       accRec.BillingCity;                   // Map feilds
 
